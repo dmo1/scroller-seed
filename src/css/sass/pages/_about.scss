@@ -1,0 +1,92 @@
+.about-text {
+  background-image: url(#{$dirImages}about-bg.jpg);
+  background-position: right;
+  background-size: cover;
+
+  left :0;
+}
+
+.about-main-text {
+  display: block;
+  margin-left: $headerItemWidth * 1.5;
+  margin-top: $headerHeight;
+  max-width: 750px;
+
+  h2 {
+    font-size: $fontSizeAboutHeader;
+    color: $colorLogoRed;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: $fontSizeAboutText;
+    color: $colorWhite;
+  }
+}
+
+.about-clients {
+  background-image: url(#{$dirImages}clients-bg.jpg);
+  background-size: cover;
+
+  left: 50%;
+}
+
+.about {
+  .page-scroll {
+    height: 300%;
+    overflow: hidden;
+  }
+}
+
+.about-page {
+  width: 200%;
+
+  section {
+    width: 50%;
+  }
+}
+
+.about-services {
+  box-sizing: border-box;
+  list-style: none;
+  padding: 20px;
+  line-height: 2;
+  border-bottom: 1px solid $colorWhite;
+  overflow: hidden;
+  transform-origin: left top;
+  transform: rotate(-90deg);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 50%;
+  text-align: justify;
+
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: $fontSizeAboutText;
+    font-weight: bold;
+    color: $colorWhite;
+  }
+}
+
+.clients-grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 70%;
+  transform: translate(-50%, -50%);
+  background-image: url(#{$dirImages}clients.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.about-next-page {
+  top: 50%;
+  left: 45%;
+  position: absolute;
+}

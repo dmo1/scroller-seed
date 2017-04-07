@@ -1,0 +1,41 @@
+//strings
+$dirFonts: "../fonts/";
+$dirImages: "../images/";
+
+//colors
+$colorBlack: #000;
+$colorWhite: #FFF;
+$colorBackground: #acacac;
+$colorHeaderGrey: #363636;
+$colorHeaderFontWhite: #f8f8f8;
+$colorLogoRed: #f37263;
+
+//sizes
+$sizeFontXS: 12px;
+$sizeFontS: 12px;
+$sizeFontM: 12px;
+$sizeFontL: 12px;
+$sizeFontXL: 14px;
+$sizeFontXXL: 16px;
+
+$headerHeight: 5.4rem;
+$headerItemWidth: 14.2%;
+$socialIconsSize: 2.35rem;
+$mobileMenuWidth: 15rem;
+
+$fontSizeAboutHeader: 2rem;
+$fontSizeAboutText: 1.3rem;
+
+//breakpoints
+$bp-xxl-min: 1600px;
+$bp-xl-min: 1200px;
+$bp-l-min: 1078px;
+$bp-m-min: 768px;
+$bp-s-max: $bp-m-min - 0.001px;
+$bp-s-min: 500px;
+$bp-xs-min: 350px;
+
+//animation timings
+$transition-slow: 2s;
+$transition-mid: 1s;
+$transition-fast: .5s;

@@ -1,0 +1,93 @@
+.noscroll {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+.hide-mobile {
+  @media screen and (max-width: $bp-s-max) {
+    display: none;
+  }
+}
+
+.hide-tablet {
+  @media screen and (min-width: $bp-m-min) {
+    display: none;
+  }
+}
+
+noscript {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html {
+  font-size: $sizeFontM;
+
+  @media screen and (min-width: $bp-l-min) {
+    font-size: $sizeFontL;
+  }
+
+  @media screen and (min-width: $bp-xl-min) {
+    font-size: $sizeFontXL;
+  }
+
+  @media screen and (min-width: $bp-xxl-min) {
+    font-size: $sizeFontXXL;
+  }
+}
+
+body {
+  background-color: $colorBackground;
+}
+
+.webkit-browser {
+  .scroll-container {
+    overflow: hidden;
+
+    &::-webkit-scrollbar {
+      background-color: $colorHeaderGrey;
+      height: .8rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $colorLogoRed;
+    }
+  }
+}
+
+.scroll-container {
+  position: fixed;
+
+  margin-top: $headerHeight;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.page-section {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.simple-transition {
+  transform: translateY(-20%);
+  opacity: 0;
+  transition: transform .5s ease-out, opacity .5s ease-out;
+}
+
+.animated {
+  .simple-transition {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
